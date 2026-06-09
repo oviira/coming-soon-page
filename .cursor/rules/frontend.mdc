@@ -1,0 +1,18 @@
+---
+alwaysApply: true
+---
+Use TypeScript.
+
+Use double quotes.
+
+Avoid any.
+
+Use functional React components.
+
+Prefer reusable components.
+
+Follow accessibility best practices.
+
+Optimize unnecessary re-renders.
+
+Follow React 18+ best practices.
