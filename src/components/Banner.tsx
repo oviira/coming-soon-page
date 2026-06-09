@@ -1,18 +1,18 @@
-import perfumeAvif from '../assets/perfume.avif';
+// import perfumeAvif from '../assets/perfume.avif';
 import perfumeJpg from '../assets/perfume.jpg';
-import perfumeWebp from '../assets/perfume.webp';
+// import perfumeWebp from '../assets/perfume.webp';
 // attar
-import attarAvif from '../assets/attar.avif';
+// import attarAvif from '../assets/attar.avif';
 import attarJpg from '../assets/attar.jpg';
-import attarWebp from '../assets/attar.webp';
+// import attarWebp from '../assets/attar.webp';
 // car-perfume
-import carPerfumeAvif from '../assets/car-freshener.avif';
+// import carPerfumeAvif from '../assets/car-freshener.avif';
 import carPerfumeJpg from '../assets/car-freshener.jpg';
-import carPerfumeWebp from '../assets/car-freshener.webp';
+// import carPerfumeWebp from '../assets/car-freshener.webp';
 // solid-perfume
-import solidPerfumeAvif from '../assets/solid-perfume.avif';
+// import solidPerfumeAvif from '../assets/solid-perfume.avif';
 import solidPerfumeJpg from '../assets/solid-perfume.jpg';
-import solidPerfumeWebp from '../assets/solid-perfume.webp';
+// import solidPerfumeWebp from '../assets/solid-perfume.webp';
 
 import BannerColumn from './BannerColumn.tsx';
 import { useEffect, useState } from 'react';
