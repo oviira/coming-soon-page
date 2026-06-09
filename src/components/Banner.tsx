@@ -35,10 +35,10 @@ function Banner() {
 
   return (
     <div className="banner__container" style={{ height: bannerContainerHeight }}>
-        <BannerColumn avifUrl={perfumeAvif} webpUrl={perfumeWebp} jpgUrl={perfumeJpg} imgAlt="Perfume Bottle of Amber Rose Fragrance" columnTitle="Perfume" />
-        <BannerColumn avifUrl={attarAvif} webpUrl={attarWebp} jpgUrl={attarJpg} imgAlt="Attar Bottle of Amber Rose Fragrance" columnTitle="Attar" />
-        <BannerColumn avifUrl={carPerfumeAvif} webpUrl={carPerfumeWebp} jpgUrl={carPerfumeJpg} imgAlt="Car Freshener Bottle of Amber Rose Fragrance" columnTitle="Car Freshener" />
-        <BannerColumn avifUrl={solidPerfumeAvif} webpUrl={solidPerfumeWebp} jpgUrl={solidPerfumeJpg} imgAlt="Solid Perfume Bottle of Amber Rose Fragrance" columnTitle="Solid Perfume" />
+        <BannerColumn jpgUrl={perfumeJpg} columnTitle="Perfume" />
+        <BannerColumn jpgUrl={attarJpg} columnTitle="Attar" />
+        <BannerColumn jpgUrl={carPerfumeJpg} columnTitle="Car Freshener" />
+        <BannerColumn jpgUrl={solidPerfumeJpg} columnTitle="Solid Perfume" />
     </div>
   )
 }

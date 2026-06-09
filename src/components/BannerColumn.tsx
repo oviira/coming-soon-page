@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function BannerColumn({avifUrl, webpUrl, jpgUrl, imgAlt, columnTitle}: {avifUrl: string, webpUrl: string, jpgUrl: string, imgAlt: string, columnTitle: string}) {
+function BannerColumn({jpgUrl, columnTitle}: {jpgUrl: string, columnTitle: string}) {
     const [bannerColumnHeight, setBannerColumnHeight] = useState(`${window.innerHeight}px`);
 
     useEffect(() => {
