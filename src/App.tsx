@@ -6,6 +6,7 @@ function App() {
     <>
       <Header />
       <Banner />
+      <div className="scroll-indicator"></div>
     </>
   )
 }
