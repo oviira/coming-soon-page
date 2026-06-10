@@ -36,8 +36,39 @@ html {
   margin: 0 auto;
 }
 
-/* Banner */
+/* Scroll Indicator — mobile only (hidden on desktop via media query).
+   Starts collapsed (scaleY: 0) and grows downward to hint that the page is scrollable.
+   transform-origin: top ensures the animation expands from the top edge. */
+.scroll-indicator {
+  width: 2px;
+  height: 100px;
+  background-color: #fff;
+  animation-name: scroll-indicator-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  transform: scaleY(0);
+  transform-origin: top;
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+@keyframes scroll-indicator-animation {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* Banner — `100dvh` shrinks with the browser chrome on mobile, preventing
+   content overflow that `100vh` causes when the address bar is visible. */
 .banner__container {
+  height: 100dvh;
+  
   @media (min-width: 960px) {
     display: flex;  
     align-items: center;
@@ -48,6 +79,7 @@ html {
 
 .banner__column-wrapper {
   width: 100%;
+  height: 100dvh;
   position: relative;
 
   &:hover {
@@ -110,6 +142,13 @@ html {
   font-weight: 900;
   font-style: italic;
   transition: all 0.5s ease;
+
+  @media (min-width: 960px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.5rem;
+  }
 }
 /* 
 #root {

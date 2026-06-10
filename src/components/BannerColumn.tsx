@@ -1,22 +1,8 @@
-import { useEffect, useState } from "react";
-
+// Height is set via `100dvh` in CSS rather than JS state, eliminating the need
+// for a window resize listener and the memory leak it previously caused.
 function BannerColumn({jpgUrl, columnTitle}: {jpgUrl: string, columnTitle: string}) {
-    const [bannerColumnHeight, setBannerColumnHeight] = useState(`${window.innerHeight}px`);
-
-    useEffect(() => {
-        window.addEventListener('resize', () => {
-            setBannerColumnHeight(`${window.innerHeight}px`);
-        });
-
-        return () => {
-            window.removeEventListener('resize', () => {
-                setBannerColumnHeight(`${window.innerHeight}px`);
-            });
-        };
-    }, []);
-
   return (
-    <div className="banner__column-wrapper" style={{ height: bannerColumnHeight }}>
+    <div className="banner__column-wrapper">
         <div className="banner__column" 
             style={{
             backgroundImage: `url(${jpgUrl})`
